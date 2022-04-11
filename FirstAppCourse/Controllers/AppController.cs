@@ -24,13 +24,17 @@ namespace FirstAppCourse.Controllers
         [HttpPost("contact")]
         public IActionResult Contact(ContactModel model) // ActionResult est l'interface qu'on veut renvoyer
         {
-            Console.WriteLine(model.Name);
+            if (ModelState.IsValid)
+            {
+
+            }
             return View();
         }
         [HttpGet("about")]
         public IActionResult About() // ActionResult est l'interface qu'on veut renvoyer
         {
             ViewBag.Title = "About Us";
+
             return View();
         }
     }
