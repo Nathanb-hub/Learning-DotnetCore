@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <ul>
+            <div class="left">
+                <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                <li><a asp-controller="App" asp-action="About">About</a></li>
+                <li><a asp-controller="App" asp-action="Contact">Contacts</a></li>
+            </div>
+            <div class="right">
+                <li>Learning App</li>
+            </div>
+
+
+        </ul>
+    </header>
+
+    
+    <div class="page">
+        <h1>@ViewBag.Title </h1>
+        @RenderBody()
+    </div>
+    
+    <footer>Nathan Buchin </footer>
+</body>
+</html>
